@@ -1,5 +1,4 @@
 import { Link, useParams } from 'react-router-dom';
-
 import type { Post } from '../types/types';
 
 const mockPosts: Post[] = [

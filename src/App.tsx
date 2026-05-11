@@ -21,13 +21,13 @@ export default function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
-            
+
             {/* Dynamic Routing Group */}
             <Route path="posts">
               <Route index element={<PostList />} />
               <Route path=":id" element={<PostDetail />} />
             </Route>
-            
+
             <Route path="*" element={<h1>404 - Not Found</h1>} />
           </Route>
         </Routes>
