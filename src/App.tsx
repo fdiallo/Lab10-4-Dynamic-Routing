@@ -1,16 +1,20 @@
-// App.tsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 import { Layout } from './components/Layout';
 import { PostList } from './pages/Posts';
 import { Login } from './pages/Login';
 import { AuthProvider } from './context/AuthContext';
 import { PostDetail } from './pages/PostDetail';
 
+/**
+ * Contains the definition of the routes, 
+ * including the dynamic :id route for the blog posts
+ */
 const Home = () => <h1>Welcome to the Demo Home Page</h1>;
 
 export default function App() {
   return (
+    // AuthProvider wraps the whole app, 
+    // making the user state accessible everywhere via useAuth
     <AuthProvider>
       <BrowserRouter>
         <Routes>

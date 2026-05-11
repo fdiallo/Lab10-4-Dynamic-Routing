@@ -1,9 +1,10 @@
-
-// components/Layout.tsx
 import { Link, Outlet } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
-
+/**
+ * Define the layout of the blog
+ * including the navigation/link to the different pages
+ */
 export const Layout = () => {
   const { user, logout } = useAuth();
   return (
