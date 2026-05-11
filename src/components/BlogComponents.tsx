@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 
-import type { Post } from './types';
+import type { Post } from '../types/types';
 
 const mockPosts: Post[] = [
   { id: '1', title: 'React is Cool', content: 'Context and Routing are powerful...' },
