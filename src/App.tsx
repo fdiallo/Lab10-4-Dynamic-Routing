@@ -21,7 +21,7 @@ export default function App() {
             {/* Dynamic Routing Group */}
             <Route path="posts">
               <Route index element={<PostList />} />
-              
+              <Route path=":id" element={<PostDetail />} />
             </Route>
             
             <Route path="*" element={<h1>404 - Not Found</h1>} />
@@ -31,4 +31,3 @@ export default function App() {
     </AuthProvider>
   );
 }
-
